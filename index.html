@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convenience POS (Demo)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div style="
+  background:#b91c1c;
+  color:white;
+  padding:8px;
+  text-align:center;
+  font-weight:700;
+">
+  DEMO VERSION — LIMITED FEATURES — 15 MINUTES ONLY
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="brand" id="shopNameDisplay">Convenience POS</div>
+  <div class="header-actions">
+    <button class="btn" id="openAddProduct">Add Product</button>
+    <button class="btn" id="editShopBtn">Edit Shop</button>
+    <button class="btn" id="btn-clear">Clear Cart</button>
+    <button class="btn" id="downloadReport">Download Today's Sales</button>
+    <button class="btn primary" id="btn-cash">Checkout</button>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="nav-panel" id="categoryNav">
+    <h4>Categories</h4>
+    <div id="categoryList"></div>
+  </nav>
+
+  <section class="left-panel">
+    <input id="search" placeholder="Search product..." autofocus />
+    <div id="productGrid" class="product-grid"></div>
+  </section>
+
+  <aside class="right-panel">
+    <div class="cart-header"><h3>Cart</h3></div>
+    <div id="cartList" class="cart-list"></div>
+    <div class="cart-summary">
+      <div>Items: <span id="cartCount">0</span></div>
+      <div>Total: ₱<span id="cartTotal">0.00</span></div>
+    </div>
+  </aside>
+</main>
+
+<!-- MODALS (UNCHANGED FROM YOUR VERSION) -->
+<!-- Keep all your modals exactly as-is -->
+
+<script src="demo.js"></script>
+</body>
+</html>
